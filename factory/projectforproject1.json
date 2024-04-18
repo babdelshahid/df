@@ -1,0 +1,9 @@
+{
+	"name": "projectforproject1",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "923fa02e-17fe-44c6-8aef-6738231acefd",
+		"tenantId": "aee5de94-75d5-4ee4-bcc5-4267ccd37fe2"
+	}
+}
