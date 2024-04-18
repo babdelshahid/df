@@ -1,0 +1,108 @@
+{
+	"name": "SourceDataset_bqx",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Trip_Transaction_Table.csv",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "trip_id",
+				"type": "String"
+			},
+			{
+				"name": "trip_start_timestamp",
+				"type": "String"
+			},
+			{
+				"name": "trip_end_timestamp",
+				"type": "String"
+			},
+			{
+				"name": "driver_id",
+				"type": "String"
+			},
+			{
+				"name": "driver_name",
+				"type": "String"
+			},
+			{
+				"name": "source_location_address1",
+				"type": "String"
+			},
+			{
+				"name": "source_city",
+				"type": "String"
+			},
+			{
+				"name": "source_province_state",
+				"type": "String"
+			},
+			{
+				"name": "source_country",
+				"type": "String"
+			},
+			{
+				"name": "destination_location_address1",
+				"type": "String"
+			},
+			{
+				"name": "destination_city",
+				"type": "String"
+			},
+			{
+				"name": "destination_province_state",
+				"type": "String"
+			},
+			{
+				"name": "destination_country",
+				"type": "String"
+			},
+			{
+				"name": "total_distance",
+				"type": "String"
+			},
+			{
+				"name": "total_fare",
+				"type": "String"
+			},
+			{
+				"name": "trip_status",
+				"type": "String"
+			},
+			{
+				"name": "delay_start_time_mins",
+				"type": "String"
+			},
+			{
+				"name": "payment_method",
+				"type": "String"
+			},
+			{
+				"name": "payment_Status",
+				"type": "String"
+			},
+			{
+				"name": "customer_id",
+				"type": "String"
+			},
+			{
+				"name": "customer_name",
+				"type": "String"
+			}
+		]
+	}
+}
