@@ -1,0 +1,101 @@
+{
+	"name": "DestinationDataset_bqx",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDatabricksDeltaLake1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureDatabricksDeltaLakeDataset",
+		"typeProperties": {
+			"database": "default",
+			"table": "trip_transaction_table"
+		},
+		"schema": [
+			{
+				"name": "trip_id",
+				"type": "long"
+			},
+			{
+				"name": "trip_start_timestamp",
+				"type": "timestamp"
+			},
+			{
+				"name": "trip_end_timestamp",
+				"type": "timestamp"
+			},
+			{
+				"name": "driver_id",
+				"type": "string"
+			},
+			{
+				"name": "driver_name",
+				"type": "string"
+			},
+			{
+				"name": "source_location_address1",
+				"type": "string"
+			},
+			{
+				"name": "source_city",
+				"type": "string"
+			},
+			{
+				"name": "source_province_state",
+				"type": "string"
+			},
+			{
+				"name": "source_country",
+				"type": "string"
+			},
+			{
+				"name": "destination_location_address1",
+				"type": "string"
+			},
+			{
+				"name": "destination_city",
+				"type": "string"
+			},
+			{
+				"name": "destination_province_state",
+				"type": "string"
+			},
+			{
+				"name": "destination_country",
+				"type": "string"
+			},
+			{
+				"name": "total_distance",
+				"type": "long"
+			},
+			{
+				"name": "total_fare",
+				"type": "long"
+			},
+			{
+				"name": "trip_status",
+				"type": "string"
+			},
+			{
+				"name": "delay_start_time_mins",
+				"type": "long"
+			},
+			{
+				"name": "payment_method",
+				"type": "string"
+			},
+			{
+				"name": "payment_Status",
+				"type": "string"
+			},
+			{
+				"name": "customer_id",
+				"type": "long"
+			},
+			{
+				"name": "customer_name",
+				"type": "string"
+			}
+		]
+	}
+}
